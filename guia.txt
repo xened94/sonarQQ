@@ -1,0 +1,12 @@
+
+agregar el path de esta ubicacion en variables de entorno 
+
+C:\sonar-scanner\bin
+
+ahora levantar el server sonarqube, en esta ruta C:\sonar-scanner\sonarqube-5.6.7\bin\windows-x86-64 , ejecutarel StarSonar. esperar hasta que cargue todo el server(no lo vayas a cerrar :v).
+
+luego abrir un cmd e ir a C:\sonar-scanner y ejecutar la linea de comando de abajo
+
+sonar-scanner -Dsonar.projectKey=my:clinica -Dsonar.sources=C:\sonar-scanner\ClinicaReategui
+
+y ya esta :v, vas a localhost:9000 y te debera aparecer el reporte 
