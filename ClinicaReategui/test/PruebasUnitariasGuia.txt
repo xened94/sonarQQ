@@ -1,0 +1,220 @@
+	
+// ----- LOGIN -----
+
+
+**<loginV>  => ingresa datos correctamente // success
+**<loginNV1> => no ingresa nada // error de credenciales
+**<loginNV2> => igresa datos pero no la password // error de credenciales
+**<loginNV3> => ingresa datos pero no el usuario  // error de credenciales
+
+
+// ----- Mantenimiento Pacientes ----- 
+
+
+**<registropaciente> ingresa datos correctamente
+**<registropacienteNV1> ingresa datos pero no ingresa nombre  // error al registrar paciente
+**<registropacienteNV2> ingresa datos pero no ingresa apellido // error al registrar paciente
+**<registropacienteNV3> ingresa datos pero no selecciona genero // error al registrar paciente
+**<registropacienteNV4> ingresa datos pero no indica fecha de nacimiento // error al registrar paciente
+**<registropacienteNV5> ingresa datos pero no ingresa direccion // error al registrar paciente 
+**<registropacienteNV6> ingresa datos pero no ingresa telefono // error al registrar paciente 
+**<registropacienteNV7> ingresa datos pero no ingresa alergia // error al registrar paciente 
+**<registropacienteNV8> ingresa datos pero ingresa numeros en nombre // error al registrar paciente
+**<registropacienteNV9> ingresa datos pero ingresa numeros en apellido // error al registrar paciente
+**<registropacienteNV10> ingresa datos pero ingresa texto en telefono // error al registrar paciente
+**<registropacienteNV11> ingresa datos pero ingresa numeros en alergia // error al registrar paciente
+**<registropacientesNV12> no ingresa nada // error al registrar paciente
+**<registropacienteNV13> ingresa datos pero ingresa caracteres especiales en nombre // error al registrar paciente
+**<registropacienteNV14> ingresa datos pero ingresa caracteres especiales en apellido// error al registrar paciente
+**<registropacienteNV15> ingresa datos pero ingresa caracteres especiales en telefono // error al registrar paciente
+**<registropacienteNV16> ingresa datos pero ingresa caracteres especiales en alergia // error al registrar paciente
+
+
+
+// -- Modificar Paciente --
+
+
+**<modificarpacienteV> modifica datos correctamente // success
+**<modificarpacienteNV1> modifica datos pero no ingresa nombre// error al modificar paciente
+**<modificarpacienteNV2> modifica datos pero no ingresa apellidos // error al modificar paciente
+**<modificarpacienteNV3> modifica datos pero no ingresa direccion // error al modificar paciente
+**<modificarpacienteNV4> modifica datos pero no ingresa telefono // error al modificar paciente
+**<modificarpacienteNV5> modifica datos pero no ingresa alergia // error al modificar paciente
+**<modificarpacienteNV6> modifica datos pero ingresa numeros en nombre // error al modificar paciente
+**<modificarpacienteNV7> modifica datos pero ingresa numeros en apellido // error al modificar paciente
+**<modificarpacienteNV8> modifica datos pero ingresa texto en telefono // error al modificar paciente
+**<modificarpacienteNV9> modifica datos pero ingresa numeros en alergia// error al modificar paciente
+**<modificarpacienteNV10> modifica datos pero ingresa caraceteres especiales en nombre // error al modificar paciente
+**<modificarpacienteNV11> modifica datos pero ingresa caraceteres especiales en apellidos // error al modificar paciente
+**<modificarpacienteNV12> modifica datos pero ingresa caraceteres especiales en telefono // error al modificar paciente
+**<modificarpacienteNV13> modifica datos pero ingresa caraceteres especiales en alergia // error al modificar paciente
+
+
+
+// -- Eliminar Paciente --
+
+
+**<eliminarpacienteV> elimina datos correctamente // success
+
+
+// ----- Mantenimiento Médico ----- 
+
+
+**<registromedicoV> ingresa datos correctamente
+**<registromedicoNV1> ingresa datos pero no selecciona Area médica // error al registar médico
+**<registromedicoNV2> ingresa datos pero no ingresa nombre // error al registrar médico
+**<registromedicoNV3> ingresa datos pero no ingresa apellido // error al registrar médico
+**<registromedicoNV4> ingresa datos pero no ingresa dirección // error al registrar médico
+**<registromedicoNV5> ingresa datos pero no ingresa email // error al registrar médico
+**<registromedicoNV6> ingresa datos pero no ingresa telefono // error al registrar médico
+**<registromedicoNV7> ingresa datos pero ingresa numeros en nombre  // error al registrar médico
+**<registromedicoNV8> ingresa datos pero ingresa numeros en apellido  // error al registrar médico
+**<registromedicoNV9> ingresa datos pero ingresa texto en telefono  // error al registrar médico
+**<registromedicoNV10> no ingresa nada // error al registrar medico
+**<registromedicoNV11> ingresa datos pero ingresa caracteres especiales en nombre  // error al registrar médico
+**<registromedicoNV12> ingresa datos pero ingresa caracteres especiales en apellido  // error al registrar médico
+**<registromedicoNV13> ingresa datos pero ingresa caracteres especiales en telefono  // error al registrar médico
+
+
+
+// -- Modificar Médico --
+
+**<modificarmedicoV> modifica datos correctamente // success
+**<modificarmedicoNV1> modifica datos pero no selecciona area // error al modificar medico
+**<modificarmedicoNV2> modifica datos pero no ingresa nombre// error al modificar medico
+**<modificarmedicoNV3> modifica datos pero no ingresa apellidos // error al modificar medico
+**<modificarmedicoNV4> modifica datos pero no ingresa direccion // error al modificar medico
+**<modificarmedicoNV5> modifica datos pero no ingresa email // error al modificar medico
+**<modificarmedicoNV6> modifica datos pero no ingresa telefono // error al modificar medico
+**<modificarmedicoNV7> modifica datos pero ingresa numeros en nombre // error al modificar medico
+**<modificarmedicoNV8> modifica datos pero ingresa numeros en apellidos // error al modificar medico
+**<modificarmedicoNV9> modifica datos pero ingresa texto en telefono // error al modificar medico
+**<modificarmedicoNV10> modifica datos pero ingresa caracteres especiales en nombre // error al modificar medico
+**<modificarmedicoNV11> modifica datos pero ingresa caracteres especiales en apellido // error al modificar medico
+**<modificarmedicoNV12> modifica datos pero ingresa caracteres especiales en telefono // error al modificar medico
+
+
+// -- Eliminar Médico --
+
+**<eliminarmedicoV> elimina datos correctamente // success
+
+// ----- Mantenimiento Áreas médicas ----- 
+
+**<registroareasmedicasV> ingresa datos correctamente // success
+**<registroareasmedicasNV1> No ingresa nada // error al registrar areas medicas
+**<registroareasmedicasNV2> ingresa datos pero con caracteres especiales  en nombre // error al registrar areas medicas
+**<registroareasmedicasNV3> ingresa datos pero con numeros en nombre // error al registrar areas medicas
+**<registroareasmedicasNV4> ingresa datos pero con espacios en nombre// error al registrar areas medicas
+
+
+
+// -- Modificar Areas Mèdicas --
+
+**<modificarareasmedicasV> modifica datos contraseñarrectamente // success
+**<modificarareasmedicasNV1> no ingresa datos a modificar // error al modificar areas medicas
+**<modificarareasmedicasNV2> modifica datos pero ingresa numeros en nombre // error al modificar areas medicas
+**<modificarareasmedicasNV3> modifica datos pero ingresa espacios en nombre // error al modificar areas medicas
+**<modificarareasmedicasNV4> modifica datos pero ingresa caracteres especiales en nombre // error al modificar areas medicas
+
+// -- Eliminar Areas Médicas --
+
+//*<eliminarareasmedicasV> elimina datos correctamente // success
+
+// ----- Mantenimiento Citas ----- 
+
+**<registroCitasV> ingresa datos correctamente / success
+**<registroCitasNV1> ingresa datos pero no selecciona paciente // error al registrar cita
+**<registroCitasNV2> ingresa datos pero no selecciona médico// error al registrar cita
+**<registroCitasNV3> ingresa datos pero no ingresa sintomas// error al registrar cita
+**<registroCitasNV4> ingresa datos pero no ingresa fecha// error al registrar cita
+**<registroCitasNV5> ingresa datos pero no ingresa hora// error al registrar cita
+**<registroCitasNV6> ingresa datos pero no ingresa costo// error al registrar cita
+**<registrocitasNV7> ingresa datos pero no selecciona Estado del cita // error al registrar cita
+**<registroCitasNV8> ingresa datos pero no selecciona Estado del pago // error al registrar cita
+**<registrocitasNV9> no ingresa nada // error al registrar cita
+**<registrocitasNV10>ingresa datos pero ingresa numeros en sintomas  // error al registrar cita
+**<registrocitasNV11>ingresa datos pero ingresa letras en costo  // error al registrar cita
+**<registrocitasNV12>ingresa datos pero ingresa caracteres especiales en sintomas  // error al registrar cita
+**<registrocitasNV13>ingresa datos pero ingresa caraceteres especiales en costo  // error al registrar cita
+
+
+
+// -- Modificar Citas --
+
+**<modificarcitasV> modifica datos correctamente // success
+**<modificarcitasNV1> modifica datos pero no selecciona paciente // error al modificar cita
+**<modificarcitasNV2> modifica datos pero no selecciona paciente médico// error al modificar cita
+**<modificarcitasNV3> modifica datos pero no ingresa fecha // error al modificar cita
+**<modificarcitasNV4> modifica datos pero no ingresa hora // error al modificar cita
+**<modificarcitasNV5> modifica datos pero no ingresa sintomas // error al modificar cita
+**<modificarcitasNV6> modifica datos pero no ingresa costo // error al modificar cita
+**<modificarcitasNV7> modifica datos pero no seleccion estado de la cita // error al modificar cita
+**<modificarcitasNV8> modifica datos pero no selecciona estado del pago // error al modificar cita
+**<modificarcitasNV9> modifica datos pero ingresa caraceteres especiales en sintomas // error al modificar cita
+**<modificarcitasNV10> modifica datos pero ingresa caraceteres especiales en costo // error al modificar cita
+**<modificarcitasNV11> modifica datos pero ingresa numeros en sintomas // error al modificar cita
+**<modificarcitasNV12> modifica datos pero ingresa letras en costo // error al modificar cita
+
+
+
+
+
+
+
+
+// -- Eliminar Citas --
+
+**<eliminarcitaV> elimina datos correctamente // success
+
+//-- Mantenimiento Reportes
+
+**<reportesV> Selecciona el paciente que necesita sus reportes // success
+
+
+// ----- Mantenimiento Usuarios ------
+
+**<registrousuarioV> ingresa datos correctamente // success
+**<registrousuarioNV1> ingresa datos pero no ingresa nombre // error al registrar usuario
+**<registrousuarioNV2> ingresa datos pero no ingresa apellido // error al registrar usuario
+**<registrousuarioNV3> ingresa datos pero no ingresa nombre de usuario // error al registrar usuario
+**<registrousuarioNV4> ingresa datos pero no ingresa email // error al registrar usuario
+**<registrousuarioNV5> ingresa datos pero no ingresa contraseña // error al registrar usuario
+**<registrousuarioNV6> ingresa datos pero ingresa numeros en nombre // error al registrar usuario
+**<registrousuarioNV7> ingresa datos pero ingresa numeros en apellido // error al registrar usuario
+**<registrousuarioNV8> no ingresa nada // error al registrar usuario
+*<registrousuarioNV9> ingresa datos pero ingresa caracteres especiales en nombre// error al registrar usuario
+*<registrousuarioNV10> ingresa datos pero ingresa caracteres especiales en apellidos // error al registrar usuario
+
+// -- Modificar Usuarios
+
+**<modificarusuarioV> modifica datos correctamente // success
+**<modificarusuarioNV1> modifica datos pero no ingresa nombre // error al modificar usuario
+**<modificarusuarioNV2> modifica datos pero no ingresa apellido // error al modificar usuario
+**<modificarusuarioNV3> modifica datos pero no ingresa nombre de usuario// error al modificar usuario
+/*<modificarusuarioNV4> modifica datos pero no ingresa email // error al modificar usuario
+/*<modificarusuarioNV5> modifica datos pero no ingresa contraseña // error al modificar usuario
+**<modificarusuarioNV6> modifica datos pero ingresa numeros en nombre // error al modificar usuario
+**<modificarusuarioNV7> modifica datos pero ingresa numeros en apellido // error al modificar usuario
+**<modificarusuarioNV8> ingresa datos pero ingresa caracteres especiales en nombre  // error al registrar areas medicas
+**<modificarusuarioNV9> ingresa datos pero ingresa caracteres especiales en apellido  // error al registrar areas medicas
+
+
+
+
+// -- Eliminar Usuarios --
+
+**<eliminarusuarioV> elimina datos correctamente // sucess
+
+
+
+
+
+
+
+
+
+
+
+
+
+
