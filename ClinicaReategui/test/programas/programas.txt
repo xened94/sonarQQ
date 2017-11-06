@@ -1,7 +1,0 @@
-selenium-server-standalone-jar-2.52.0
-*///// --> laravel-master // -> opcional --> composer .json // composer install
-xampp 5.6.30
-phpunit 4.8.36
-firefox 38.0.1
---> dentro del firefox para capturar los formularios////selenium IDE -- CON EXTENSION PHPUNIT(selenium IDE - PHP FORMATTERS---
-jdks - variables en path----

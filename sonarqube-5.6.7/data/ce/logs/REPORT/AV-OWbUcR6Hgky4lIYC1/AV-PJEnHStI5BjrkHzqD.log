@@ -1,0 +1,80 @@
+2017.11.05 21:24:01 INFO  [o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-PJEnHStI5BjrkHzqD
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ExtractReportStep] Analysis report extracted | compressedSize=1 MB
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Extract report | time=1159ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep] SonarQube plugins:
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - C# 5.0 (csharp)
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - Java 3.13.1 (java)
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - Web 2.5.0.476 (web)
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - Git 1.2 (scmgit)
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - SonarPHP 2.11.0.2485 (php)
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - SVN 1.3 (scmsvn)
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - JavaScript 2.11 (javascript)
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep] Global properties:
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.core.id=20171105204727
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.core.startTime=2017-11-05T20:47:27-0500
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.core.version=5.6.7
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.permission.template.default=default_template
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.qualitygate=1
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep] Settings for module: my:clinica
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.php.coverage.reportPath=C:sonar-scanner	estphpunit.coverage.xml
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.php.tests.reportPath=C:sonar-scanner	estphpunit.report.xml
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.projectBaseDir=C:\sonar-scanner
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.projectKey=my:clinica
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.projectName=Proyecto
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.projectVersion=1.0
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.sourceEncoding=windows-1252
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.sources=C:\sonar-scanner\ClinicaReategui
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.working.directory=C:\sonar-scanner\.scannerwork
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Log scanner context | time=1ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Load analysis metadata | time=0ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Build tree of components | time=76ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Validate project | time=1ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Load quality profiles | time=140ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Load Quality gate | time=2ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Load differential periods | time=5ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Load inner file and in project duplications | time=35ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.d.CrossProjectDuplicationStatusHolderImpl] Cross project duplication is disabled because it's disabled in the analysis report
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute cross project duplications | time=0ms
+2017.11.05 21:24:02 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute size measures | time=45ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute new coverage | time=21ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute coverage measures | time=3ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute comment measures | time=2ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Copy custom measures | time=137ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute duplication measures | time=4ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute duplication data measures | time=0ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute language distribution | time=3ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute test measures | time=1ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute complexity measures | time=11ms
+2017.11.05 21:24:03 INFO  [o.s.s.c.s.ComputationStepExecutor] Load measure computers | time=0ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   Execution time for each component visitor:
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - LoadComponentUuidsHavingOpenIssuesVisitor | time=4ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - IntegrateIssuesVisitor | time=1119ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - CloseIssuesOnRemovedComponentsVisitor | time=0ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - QualityModelMeasuresVisitor | time=12ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - NewQualityModelMeasuresVisitor | time=5ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - LastCommitVisitor | time=0ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - MeasureComputersVisitor | time=4ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ComputationStepExecutor] Execute component visitors | time=1144ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute measure variations | time=119ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute Quality Gate measures | time=1ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute Quality profile measures | time=0ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ComputationStepExecutor] Generate Quality profile events | time=1ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ComputationStepExecutor] Generate Quality gate events | time=1ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist components | time=36ms
+2017.11.05 21:24:04 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist snapshots | time=61ms
+2017.11.05 21:24:05 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist measures | time=770ms
+2017.11.05 21:24:06 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist issues | time=1473ms
+2017.11.05 21:24:06 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist project links | time=1ms
+2017.11.05 21:24:06 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist events | time=2ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist sources | time=586ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist tests | time=1ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist cross project duplications index | time=0ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Enable snapshot | time=35ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Index components | time=13ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Purge db | time=241ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Apply permissions | time=1ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Index issues | time=3ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Index tests | time=85ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Send issue notifications | time=1ms
+2017.11.05 21:24:07 INFO  [o.s.s.c.s.ComputationStepExecutor] Publish task results | time=0ms
+2017.11.05 21:24:08 INFO  [o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-PJEnHStI5BjrkHzqD | time=7018ms

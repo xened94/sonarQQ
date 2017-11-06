@@ -1131,3 +1131,268 @@ CTRL-C trapped.  Shutting down.
 2017.11.05 20:13:08 INFO   es[o.elasticsearch.node]  [sonar-1509927014559] closed
 2017.11.05 20:13:09 INFO  app[o.s.p.m.Monitor] Process[es] is stopped
 <-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.11.05 20:47:27 INFO  app[o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonar-scanner\sonarqube-5.6.7\temp
+2017.11.05 20:47:28 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[es]: C:\Program Files\Java\jre1.8.0_144\bin\java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djava.net.preferIPv4Stack=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonar-scanner\sonarqube-5.6.7\temp -javaagent:C:\Program Files\Java\jre1.8.0_144\lib\management-agent.jar -cp ./lib/common/*;./lib/search/* org.sonar.search.SearchServer C:\sonar-scanner\sonarqube-5.6.7\temp\sq-process3912353340992291227properties
+2017.11.05 20:47:28 INFO   es[o.s.p.ProcessEntryPoint]  Starting es
+2017.11.05 20:47:28 INFO   es[o.s.s.EsSettings]  Elasticsearch listening on 127.0.0.1:9001
+2017.11.05 20:47:29 INFO   es[o.elasticsearch.node]  [sonar-1509932847676] version[1.7.5], pid[8416], build[00f95f4/2016-02-02T09:55:30Z]
+2017.11.05 20:47:29 INFO   es[o.elasticsearch.node]  [sonar-1509932847676] initializing ...
+2017.11.05 20:47:29 INFO   es[o.e.plugins]  [sonar-1509932847676] loaded [], sites []
+2017.11.05 20:47:29 INFO   es[o.elasticsearch.env]  [sonar-1509932847676] using [1] data paths, mounts [[Disco local (C:)]], net usable_space [20.5gb], net total_space [195.2gb], types [NTFS]
+2017.11.05 20:47:30 WARN   es[o.e.bootstrap]  JNA not found. native methods will be disabled.
+2017.11.05 20:47:30 INFO   es[o.elasticsearch.node]  [sonar-1509932847676] initialized
+2017.11.05 20:47:30 INFO   es[o.elasticsearch.node]  [sonar-1509932847676] starting ...
+2017.11.05 20:47:30 INFO   es[o.e.transport]  [sonar-1509932847676] bound_address {inet[/127.0.0.1:9001]}, publish_address {inet[/127.0.0.1:9001]}
+2017.11.05 20:47:30 INFO   es[o.e.discovery]  [sonar-1509932847676] sonarqube/ZiNs42wdRgCp9NxrVEcQ5A
+2017.11.05 20:47:33 INFO   es[o.e.cluster.service]  [sonar-1509932847676] new_master [sonar-1509932847676][ZiNs42wdRgCp9NxrVEcQ5A][JHON-PC][inet[/127.0.0.1:9001]]{rack_id=sonar-1509932847676}, reason: zen-disco-join (elected_as_master)
+2017.11.05 20:47:33 INFO   es[o.elasticsearch.node]  [sonar-1509932847676] started
+2017.11.05 20:47:33 INFO   es[o.e.gateway]  [sonar-1509932847676] recovered [6] indices into cluster_state
+2017.11.05 20:47:35 INFO  app[o.s.p.m.Monitor] Process[es] is up
+2017.11.05 20:47:35 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[web]: C:\Program Files\Java\jre1.8.0_144\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djruby.management.enabled=false -Djruby.compile.invokedynamic=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=C:\sonar-scanner\sonarqube-5.6.7\temp -javaagent:C:\Program Files\Java\jre1.8.0_144\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;C:\sonar-scanner\sonarqube-5.6.7\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\sonar-scanner\sonarqube-5.6.7\temp\sq-process4056368660710448840properties
+2017.11.05 20:47:35 INFO  web[o.s.p.ProcessEntryPoint] Starting web
+2017.11.05 20:47:36 INFO  web[o.s.s.a.TomcatContexts] Webapp directory: C:\sonar-scanner\sonarqube-5.6.7\web
+2017.11.05 20:47:36 INFO  web[o.a.c.h.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.11.05 20:47:36 INFO  web[o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2017.11.05 20:47:37 INFO  web[o.s.s.p.ServerImpl] SonarQube Server / 5.6.7 / ca9cfc3437a251cd081c75971790912b081acc64
+2017.11.05 20:47:37 INFO  web[o.s.s.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://localhost:9092/sonar
+2017.11.05 20:47:37 INFO  web[o.s.s.d.EmbeddedDatabase] Embedded database started. Data stored in: C:\sonar-scanner\sonarqube-5.6.7\data
+2017.11.05 20:47:37 INFO  web[o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.11.05 20:47:37 WARN  web[o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.11.05 20:47:38 INFO  web[o.s.s.p.DefaultServerFileSystem] SonarQube home: C:\sonar-scanner\sonarqube-5.6.7
+2017.11.05 20:47:38 INFO  web[o.e.plugins] [sonar-1509932847676] loaded [], sites []
+2017.11.05 20:47:39 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin C# / 5.0 / 17ddb09047940791828dcb70c9e225f006ab11aa
+2017.11.05 20:47:39 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin Git / 1.2 / a713dd64daf8719ba4e7f551f9a1966c62690c17
+2017.11.05 20:47:39 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin Java / 3.13.1 / cf0f0c950ba3e83a87c7fe11c6ff7e63f4864bd9
+2017.11.05 20:47:39 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin JavaScript / 2.11 / a9b1afa9ceef7079811779d9efc5f8026acb1400
+2017.11.05 20:47:39 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin SVN / 1.3 / aff503d48bc77b07c2b62abf93249d0a20bd355c
+2017.11.05 20:47:39 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin SonarPHP / 2.11.0.2485 / 741861a29e5f9a26c6c99c06268facb6c4f4a882
+2017.11.05 20:47:39 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin Web / 2.5.0.476 / 636872f5d37fa7a440fe07d08d504e1a881225e5
+2017.11.05 20:47:39 INFO  web[o.s.s.p.RailsAppsDeployer] Deploying Ruby on Rails applications
+2017.11.05 20:47:40 INFO  web[o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2017.11.05 20:47:41 INFO  web[o.s.s.n.NotificationService] Notification service started (delay 60 sec.)
+2017.11.05 20:47:41 INFO  web[o.s.s.s.RegisterMetrics] Register metrics
+2017.11.05 20:47:41 INFO  web[o.s.s.r.RegisterRules] Register rules
+2017.11.05 20:47:42 INFO  web[o.s.s.q.RegisterQualityProfiles] Register quality profiles
+2017.11.05 20:47:43 INFO  web[o.s.s.s.RegisterNewMeasureFilters] Register measure filters
+2017.11.05 20:47:43 INFO  web[o.s.s.s.RegisterDashboards] Register dashboards
+2017.11.05 20:47:43 INFO  web[o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2017.11.05 20:47:43 INFO  web[o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2017.11.05 20:47:43 INFO  web[o.s.s.e.IndexerStartupTask] Index activities
+2017.11.05 20:47:44 INFO  web[o.s.s.e.IndexerStartupTask] Index issues
+2017.11.05 20:47:44 INFO  web[o.s.s.e.IndexerStartupTask] Index tests
+2017.11.05 20:47:44 INFO  web[o.s.s.e.IndexerStartupTask] Index users
+2017.11.05 20:47:44 INFO  web[o.s.s.e.IndexerStartupTask] Index views
+2017.11.05 20:47:44 INFO  web[jruby.rack] jruby 1.7.9 (ruby-1.8.7p370) 2013-12-06 87b108a on Java HotSpot(TM) 64-Bit Server VM 1.8.0_144-b01 [Windows 7-amd64]
+2017.11.05 20:47:44 INFO  web[jruby.rack] using a shared (threadsafe!) runtime
+2017.11.05 20:47:51 INFO  web[jruby.rack] keeping custom (config.logger) Rails logger instance
+2017.11.05 20:47:51 INFO  web[o.s.s.p.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@76d8e605 [pattern=/sessions/init/*]
+2017.11.05 20:47:51 INFO  web[o.s.s.p.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@6f1f74fd [pattern=/oauth2/callback/*]
+2017.11.05 20:47:51 INFO  web[o.a.c.h.Http11NioProtocol] Starting ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.11.05 20:47:51 INFO  web[o.s.s.a.TomcatAccessLog] Web server is started
+2017.11.05 20:47:51 INFO  web[o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2017.11.05 20:47:51 INFO  app[o.s.p.m.Monitor] Process[web] is up
+2017.11.05 20:47:51 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[ce]: C:\Program Files\Java\jre1.8.0_144\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=C:\sonar-scanner\sonarqube-5.6.7\temp -javaagent:C:\Program Files\Java\jre1.8.0_144\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\sonar-scanner\sonarqube-5.6.7\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\sonar-scanner\sonarqube-5.6.7\temp\sq-process2008258961079541598properties
+2017.11.05 20:47:53 INFO  ce[o.s.p.ProcessEntryPoint] Starting ce
+2017.11.05 20:47:53 INFO  ce[o.s.ce.app.CeServer] Compute Engine starting up...
+2017.11.05 20:47:53 INFO  ce[o.s.s.p.ServerImpl] SonarQube Server / 5.6.7 / ca9cfc3437a251cd081c75971790912b081acc64
+2017.11.05 20:47:53 INFO  ce[o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.11.05 20:47:53 WARN  ce[o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.11.05 20:47:54 INFO  ce[o.s.s.p.DefaultServerFileSystem] SonarQube home: C:\sonar-scanner\sonarqube-5.6.7
+2017.11.05 20:47:54 INFO  ce[o.e.plugins] [sonar-1509932847676] loaded [], sites []
+2017.11.05 20:47:55 INFO  ce[o.s.c.c.CePluginRepository] Load plugins
+2017.11.05 20:47:55 INFO  ce[o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Tue May 09 20:47:55 COT 2017
+2017.11.05 20:47:55 INFO  ce[o.s.ce.app.CeServer] Compute Engine is up
+2017.11.05 20:47:56 INFO  app[o.s.p.m.Monitor] Process[ce] is up
+2017.11.05 20:48:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:48:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:49:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:49:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:50:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:50:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:51:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:51:22 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-PBl7jStI5BjrkHzp-
+2017.11.05 20:51:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:51:36 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-PBl7jStI5BjrkHzp- | time=13933ms
+2017.11.05 20:52:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:52:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:53:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:53:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:54:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:54:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:55:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:55:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:56:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:56:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:57:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:57:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:58:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:58:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:59:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 20:59:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:00:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:00:06 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-PDmDFStI5BjrkHzp_
+2017.11.05 21:00:15 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-PDmDFStI5BjrkHzp_ | time=9032ms
+2017.11.05 21:00:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:01:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:01:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:02:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:02:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:03:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:03:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:04:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:04:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:05:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:05:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:06:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:06:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:07:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:07:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:08:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:08:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:09:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:09:30 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-PFv0hStI5BjrkHzqA
+2017.11.05 21:09:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:09:38 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-PFv0hStI5BjrkHzqA | time=8063ms
+2017.11.05 21:10:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:10:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:11:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:11:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:12:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:12:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:13:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:13:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:13:40 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-PGs_wStI5BjrkHzqB
+2017.11.05 21:13:47 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-PGs_wStI5BjrkHzqB | time=7749ms
+2017.11.05 21:14:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:14:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:15:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:15:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:16:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:16:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:16:48 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-PHa4_StI5BjrkHzqC
+2017.11.05 21:16:55 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-PHa4_StI5BjrkHzqC | time=7127ms
+2017.11.05 21:17:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:17:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:18:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:18:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:19:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:19:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:20:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:20:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:21:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:21:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:22:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:22:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:23:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:23:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:24:01 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-PJEnHStI5BjrkHzqD
+2017.11.05 21:24:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:24:08 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-PJEnHStI5BjrkHzqD | time=7023ms
+2017.11.05 21:24:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:25:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:25:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:26:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:26:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:27:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:27:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:28:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:28:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:29:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:29:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:30:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:30:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:31:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:31:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:32:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:32:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:33:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:33:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:34:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:34:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:35:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:35:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:36:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:36:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:37:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:37:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:38:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:38:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:39:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:39:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:40:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:40:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:41:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:41:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:42:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:42:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:43:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:43:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:44:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:44:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:45:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:45:29 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-PN-sQStI5BjrkHzqE
+2017.11.05 21:45:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:45:36 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-PN-sQStI5BjrkHzqE | time=7226ms
+2017.11.05 21:46:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:46:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:47:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:47:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:47:58 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-POjR3StI5BjrkHzqF
+2017.11.05 21:48:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:48:05 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-POjR3StI5BjrkHzqF | time=6602ms
+2017.11.05 21:48:33 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:49:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:49:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:50:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:50:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:51:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:51:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:52:03 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:52:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:53:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:53:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:54:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:54:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:55:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:55:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:56:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:56:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:57:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:57:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:58:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:58:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:59:03 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=my:clinica | type=REPORT | id=AV-PRFjyStI5BjrkHzqG
+2017.11.05 21:59:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 21:59:11 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=my:clinica | type=REPORT | id=AV-PRFjyStI5BjrkHzqG | time=8048ms
+2017.11.05 21:59:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:00:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:00:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:01:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:01:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:02:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:02:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:03:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:03:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:04:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:04:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:05:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:05:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:06:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:06:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:07:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:07:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:08:04 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+2017.11.05 22:08:34 INFO   es[o.e.c.r.a.decider]  [sonar-1509932847676] low disk watermark [85%] exceeded on [ZiNs42wdRgCp9NxrVEcQ5A][sonar-1509932847676] free: 20.4gb[10.4%], replicas will not be assigned to this node
+CTRL-C trapped.  Shutting down.
+2017.11.05 22:08:55 INFO  ce[o.s.p.StopWatcher] Stopping process
+2017.11.05 22:08:55 INFO  ce[o.s.ce.app.CeServer] Compute Engine shutting down...
+2017.11.05 22:08:55 INFO  app[o.s.p.m.Monitor] Process[ce] is stopping
+2017.11.05 22:08:56 INFO  app[o.s.p.m.Monitor] Process[ce] is stopped
+2017.11.05 22:08:56 INFO  app[o.s.p.m.Monitor] Process[web] is stopping
+2017.11.05 22:08:57 INFO  web[o.s.p.StopWatcher] Stopping process
+2017.11.05 22:08:57 INFO  web[o.a.c.h.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-0.0.0.0-9000"]
